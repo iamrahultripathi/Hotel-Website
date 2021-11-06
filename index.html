@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <title>Rahul Project</title>
+    <title>Mini Project</title>
     <script src="https://cdn-tailwindcss.vercel.app/"></script>
     <script src="https://use.fontawesome.com/e523b2ba29.js"></script>
   </head>
@@ -19,9 +19,9 @@
       <div class="nav-left">Babu ka shona</div>
       <div class="nav-right">
         <a href="#" class="nav-right-item">Home</a>
-        <a href="#section2" class="nav-right-item">Feedback</a>
-        <a href="#section3" class="nav-right-item">About Us</a>
-        <a href="#section4" class="nav-right-item">Menu</a>
+        <a href="feedback.html" target = "_blank" class="nav-right-item">Feedback</a>
+        <a href="aboutus.html" target = "_blank" class="nav-right-item">About Us</a>
+        <a href="menu.html" target = "_blank" class="nav-right-item">Menu</a>
         <a href="#section5" class="nav-right-item">Contact Us</a>
       </div>
     </nav>
@@ -33,149 +33,9 @@
         Clean and simple design
       </h2>
       <span>
-        <a href="#section3" ><button class="landing-button" >Learn More</button></a>
+        <a href="aboutus.html" target="_blank"  ><button class="landing-button" >Learn More</button></a>
       </span>
-    </section> 
-    <section id="section2"> 
-      <h2 class="rest-title">Babu ka shona</h2>
-      <h4 class="rest-description">Restaurant Feedback form</h4>
-      <form class="feedback-form">
-          <label for="name"  class="input-label" >Name</label>
-          <input id="name" placeholder='Enter Your Name' type="text" class="input-field" ></input>
-          <label for="email" class="input-label" >Email</label>
-          <input id="email" placeholder='Enter Your Email' type="email" class="input-field" ></input>
-          <br/>
-          <label  class="input-label" >Location You Visited</label>
-          <select class="form-dropdown" name="dropdown">
-              <option class="form-dropdown-options" value="Credit Card" selected>Bandra</option>
-              <option class="form-dropdown-options" value="Paypal" >worli</option>
-              <option class="form-dropdown-options" value="Paypal" >Ghatkopar</option>
-              <option class="form-dropdown-options" value="Paypal" >Church Gate</option>
-            </select>
-            <br />
-            <label  class="input-label" >Dine in / take out</label> 
-                 <div class="checkbox-label" >
-                    <label for="radio1" class="input-label">Dine In</label>
-                    <input id="radio1" name="papa" type="radio" ></input>
-                </div>
-                <div class="checkbox-label" >
-                    <label for="radio1" class="input-label">Take Out</label>
-                    <input id="radio1" name="papa" type="radio" ></input>
-                </div>
-                <label  class="input-label" >Things that should be improved in future</label>
-                <label  class="input-label" >(Check all that apply)</label>
-                <div class="checkbox-label" >
-                    <label for="checkbox-1" class="input-label">Food Quality</label>
-                    <input id="checkbox-1" type="checkbox" ></input>
-                </div>
-                <div class="checkbox-label" >
-                    <label for="checkbox-2" class="input-label">Services</label>
-                    <input id="checkbox-2" type="checkbox" ></input>
-                </div>
-                <div class="checkbox-label" >
-                    <label for="checkbox-3" class="input-label">Interiors</label>
-                    <input id="checkbox-3" type="checkbox" ></input>
-                </div>
-                <div class="checkbox-label" >
-                    <label for="checkbox-4" class="input-label">Menu</label>
-                    <input id="checkbox-4" type="checkbox" ></input>
-                </div>
-                <div class="checkbox-label" >
-                    <label for="checkbox-5" class="input-label">Food Taste</label>
-                    <input id="checkbox-5" type="checkbox" ></input>
-                </div>
-                <label for="textarea" class="input-label" >Any Comments or Suggestions ?</label>
-                <textarea id="textarea" class="input-field input-field-textarea" ></textarea>
-                <button class="input-button" >Submit</button>
-            </form>
-        </section>
-        <section id="section3" class="About py-5 w-full" >
-          <h1 class="capitalize text-2xl font-medium text-center bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 bg-clip-text text-transparent">about Us</h1>
-          <div class="w-full grid grid-cols-2">
-            <div></div>
-            <div class="mt-5 space-y-10 pr-60 mt-10" >
-              <h2 class="text-3xl font-medium bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 bg-clip-text text-transparent" >Discover Our Restaurants Story</h2>
-              <p class="text-sm text-gray-500" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nam quia sint inventore totam, similique cumque beatae dicta aliquam quod recusandae perspiciatis minima ratione fuga odit ex fugit consequuntur corporis Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, molestias? Ab at, eveniet dignissimos dolores adipisci quos hic quam nesciunt voluptas alias explicabo dolore asperiores esse illum sint consequatur voluptatum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit saepe consequatur commodi minus, molestias porro iusto quidem non natus similique officia aliquid rem incidunt quis error, voluptatum facere in veritatis.</p>
-              <p class="text-sm text-gray-500" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nam quia sint inventore totam, similique cumque beatae dicta aliquam quod recusandae perspiciatis minima ratione fuga odit ex fugit consequuntur corporis Lorem ipsum dolor sit amet consectetur, adipisicings.</p>
-              <a href = "#section4"><button class="py-2 px-4 bg-orange-400 text-white rounded-lg" >Discover Menu</button></a>
-            </div>
-          </div>
-        </section>
-        <section  id="section4" class="Menu py-10 bg-gray-100 space-y-8" >
-          <h4 class="capitalize text-xl text-center bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 bg-clip-text text-transparent" >order online now</h4>
-          <h2 class="text-3xl text-center font-medium bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 bg-clip-text text-transparent" >
-            Our Speciality Cusine
-          </h2> 
-          <!-- <div class="flex justify-center items-center" >
-            <p class="px-4 py-2 bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 bg-clip-text text-transparent font-medium border-b-2 border-pink-500" >Breakfast</p>
-            <p class="px-4 py-2 bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 bg-clip-text text-transparent font-medium border-b-2 border-gray-400 " >Lunch</p>
-            <p class="px-4 py-2 bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 bg-clip-text text-transparent font-medium border-b-2 border-gray-400 " >Dinner</p>
-            <p class="px-4 py-2 bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 bg-clip-text text-transparent font-medium border-b-2 border-gray-400 " >Dessert</p>
-            <p class="px-4 py-2 bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 bg-clip-text text-transparent font-medium border-b-2 border-gray-400 " >Shake</p>
-          </div>   -->
-          <div class="grid grid-cols-5" >
-            <div class="flex flex-col justify-center items-center space-y-1 p-2 " >
-              <img class="w-60 h-72 object-cover rounded " src="./assets/burger.jpg" alt="burger" ></img>
-              <p class="bg-gradient-to-r from-red-500 via-red-500 to-pink-500 bg-clip-text text-transparent" >Combo Cheese Burger and Fries</p>
-              <h2 class="text-2xl text-gray-600" >Rs.250</h2>
-              <button class="py-2 px-6 bg-orange-500 text-white rounded-lg" >Order Now</button>
-            </div>
-            <div class="flex flex-col justify-center items-center space-y-1 p-2 " >
-              <img class="w-60 h-72 object-cover rounded " src="./assets/burger2.jpg" alt="burger" ></img>
-              <p class="bg-gradient-to-r from-red-500 via-red-500 to-pink-500 bg-clip-text text-transparent" >The Unthinkable Pizza</p>
-              <h2 class="text-2xl text-gray-600" >Rs.450</h2>
-              <button class="py-2 px-6 bg-orange-500 text-white rounded-lg" >Order Now</button>
-            </div>
-            <div class="flex flex-col justify-center items-center space-y-1 p-2 " >
-              <img class="w-60 h-72 object-cover rounded " src="./assets/burger3.jpg" alt="burger" ></img>
-              <p class="bg-gradient-to-r from-red-500 via-red-500 to-pink-500 bg-clip-text text-transparent" >The Grand Bread Omlette</p>
-              <h2 class="text-2xl text-gray-600" >Rs.130</h2>
-              <button class="py-2 px-6 bg-orange-500 text-white rounded-lg" >Order Now</button>
-            </div>
-            <div class="flex flex-col justify-center items-center space-y-1 p-2 " >
-              <img class="w-60 h-72 object-cover rounded " src="./assets/burger4.jpg" alt="burger" ></img>
-              <p class="bg-gradient-to-r from-red-500 via-red-500 to-pink-500 bg-clip-text text-transparent" >Cheese Paneer Hotdog</p>
-              <h2 class="text-2xl text-gray-600" >Rs.190</h2>
-              <button class="py-2 px-6 bg-orange-500 text-white rounded-lg" >Order Now</button>
-            </div>
-            <div class="flex flex-col justify-center items-center space-y-1 p-2 " >
-              <img class="w-60 h-72 object-cover rounded " src="./assets/burger5.jpg" alt="burger" ></img>
-              <p class="bg-gradient-to-r from-red-500 via-red-500 to-pink-500 bg-clip-text text-transparent" >Special French Fries</p>
-              <h2 class="text-2xl text-gray-600" >Rs.100</h2>
-              <button class="py-2 px-6 bg-orange-500 text-white rounded-lg" >Order Now</button>
-            </div>
-            <div class="flex flex-col justify-center items-center space-y-1 p-2 " >
-              <img class="w-60 h-72 object-cover rounded " src="./assets/burger6.jpg" alt="burger" ></img>
-              <p class="bg-gradient-to-r from-red-500 via-red-500 to-pink-500 bg-clip-text text-transparent" >Deluxe Veggie</p>
-              <h2 class="text-2xl text-gray-600" >Rs.400</h2>
-              <button class="py-2 px-6 bg-orange-500 text-white rounded-lg" >Order Now</button>
-            </div>
-            <div class="flex flex-col justify-center items-center space-y-1 p-2 " >
-              <img class="w-60 h-72 object-cover rounded " src="./assets/burger7.jpg" alt="burger" ></img>
-              <p class="bg-gradient-to-r from-red-500 via-red-500 to-pink-500 bg-clip-text text-transparent" >Maharaja Burger</p>
-              <h2 class="text-2xl text-gray-600" >Rs.180</h2>
-              <button class="py-2 px-6 bg-orange-500 text-white rounded-lg" >Order Now</button>
-            </div>
-            <div class="flex flex-col justify-center items-center space-y-1 p-2 " >
-              <img class="w-60 h-72 object-cover rounded " src="./assets/burger8.jpg" alt="burger" ></img>
-              <p class="bg-gradient-to-r from-red-500 via-red-500 to-pink-500 bg-clip-text text-transparent" >Special Magic Momos</p>
-              <h2 class="text-2xl text-gray-600" >Rs.270</h2>
-              <button class="py-2 px-6 bg-orange-500 text-white rounded-lg" >Order Now</button>
-            </div>
-            <div class="flex flex-col justify-center items-center space-y-1 p-2 " >
-              <img class="w-60 h-72 object-cover rounded " src="./assets/burger9.jpg" alt="burger" ></img>
-              <p class="bg-gradient-to-r from-red-500 via-red-500 to-pink-500 bg-clip-text text-transparent" >Hokkien Noodles</p>
-              <h2 class="text-2xl text-gray-600" >Rs.220</h2>
-              <button class="py-2 px-6 bg-orange-500 text-white rounded-lg" >Order Now</button>
-            </div>
-            <div class="flex flex-col justify-center items-center space-y-1 p-2 " >
-              <img class="w-60 h-72 object-cover rounded " src="./assets/burger10.jpg" alt="burger" ></img>
-              <p class="bg-gradient-to-r from-red-500 via-red-500 to-pink-500 bg-clip-text text-transparent" >Pancake</p>
-              <h2 class="text-2xl text-gray-600" >Rs.310</h2>
-              <button class="py-2 px-6 bg-orange-500 text-white rounded-lg" >Order Now</button>
-            </div>
-          </div>
-        </section>
+    </section>  
         <section id="section5" class="py-16 px-24 special text-white grid grid-cols-3" >
           <div class="space-y-5" >
             <div class="space-y-0" >
