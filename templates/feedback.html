@@ -1,14 +1,14 @@
 <head>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../static/style.css" />
 </head>
 <body>
     <h2 class="rest-title">Babu ka shona</h2>
     <h4 class="rest-description">Restaurant Feedback form</h4>
-    <form class="feedback-form">
+    <form class="feedback-form" action="/form" method="post">
         <label for="name"  class="input-label" >Name</label>
-        <input id="name" placeholder='Enter Your Name' type="text" class="input-field" ></input>
-        <label for="email" class="input-label" >Email</label>
-        <input id="email" placeholder='Enter Your Email' type="email" class="input-field" ></input>
+        <input id="name" placeholder='Enter Your Name' type="text" class="input-field" name='name'></input>
+        <label for="email" class="input-label">Email</label>
+        <input id="email" placeholder='Enter Your Email' type="email" class="input-field"  name='email' ></input>
         <br/>
         <label  class="input-label" >Location You Visited</label>
         <select class="form-dropdown" name="dropdown">
@@ -50,7 +50,7 @@
                   <input id="checkbox-5" type="checkbox" ></input>
               </div>
               <label for="textarea" class="input-label" >Any Comments or Suggestions ?</label>
-              <textarea id="textarea" class="input-field input-field-textarea" ></textarea>
-              <button class="input-button" >Submit</button>
+              <textarea id="textarea" class="input-field input-field-textarea" name='message'></textarea>
+              <input type="submit" value="Submit" class="input-button" >
     </form>
 </body>
