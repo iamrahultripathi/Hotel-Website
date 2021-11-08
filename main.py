@@ -20,7 +20,7 @@ def form():
         email=request.form['email']
         location=request.form['dropdown']
         ordertype=request.form['papa']
-        improvement=improvement
+        #improvement=improvement
         message=request.form['message']
         
         

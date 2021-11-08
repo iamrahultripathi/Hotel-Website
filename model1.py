@@ -19,15 +19,15 @@ class Feedback(db.Model):
     email = db.Column(db.String(320),nullable=False)
     location = db.Column(db.String(20),nullable=False)
     ordertype = db.Column(db.String(20),nullable=False)
-    improvement = db.Column(db.String(120),nullable=False)
+    #improvement = db.Column(db.String(120),nullable=False)
     message = db.Column(db.Text,nullable=True)
 
-    def __init__(self,name,email,location,ordertype,improvement,message):
+    def __init__(self,name,email,location,ordertype,message):
         self.name=name
         self.email=email
         self.location=location
         self.ordertype=ordertype
-        self.improvement=improvement
+        #self.improvement=improvement
         self.message= message
         
 db.create_all()
