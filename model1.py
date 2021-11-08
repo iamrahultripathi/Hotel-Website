@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 #basedir = os.path.abspath(os.path.dirname(file))
 
-app = Flask(name)
+app = Flask(__name__)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///data.db"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
@@ -19,16 +19,17 @@ class Feedback(db.Model):
     email = db.Column(db.String(320),nullable=False)
     location = db.Column(db.String(20),nullable=False)
     ordertype = db.Column(db.String(20),nullable=False)
-    #improvement = db.Column(db.String(120),nullable=False)
+    improvement = db.Column(db.String(120),nullable=False)
     message = db.Column(db.Text,nullable=True)
 
-    def __init__(self,name,email,location,ordertype,message):
+    def __init__(self,name,email,location,improvement,ordertype,message):
         self.name=name
         self.email=email
         self.location=location
         self.ordertype=ordertype
-        #self.improvement=improvement
+        self.improvement=improvement
         self.message= message
-        
+
+
 db.create_all()
 db.session.commit()
