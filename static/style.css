@@ -43,12 +43,12 @@ html {
 }
 .landing {
   padding: 24rem 0;
-  background-image: linear-gradient(
+   background-image: linear-gradient(
       to right bottom,
       rgba(0, 0, 0, 0.8),
       rgba(0, 0, 0, 0.1)
     ),
-    url('/assets/landing-bg.jpg');
+     url(./landing-bg.jpg);
   background-repeat: no-repeat;
   width: 100%;
   background-size: cover;
@@ -179,7 +179,7 @@ html {
 
 .About {
   min-height: 100vh; /* view Height means everything that is visible to me */
-  background-image: url(./assets/food.jpg);
+  background-image: url(./food.jpg);
   background-size: cover;
 }
 
@@ -196,6 +196,6 @@ html {
 
 .special {
   background-image: linear-gradient(to right, rgba(0, 0, 0), rgba(0, 0, 0, 0.5)),
-    url(/assets/footer.jpg);
+    url(../static/footer.jpg);
   background-size: cover;
 }
